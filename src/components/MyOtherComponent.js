@@ -26,6 +26,8 @@ class MyOtherComponent extends Component {
 
         return (
             <div>
+
+                <h4>Component subscribed to store dispaching an action</h4>
                 <ul>
                     {myEntries.map(entry => {
                         return (<li key={entry.name}>{entry.name}</li>)

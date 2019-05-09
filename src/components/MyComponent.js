@@ -4,7 +4,8 @@ import { connect } from 'react-redux'
 function MyComponent({ myEntries }) {
     console.log({ myEntries })
     return (
-        <div><h1>Demo</h1>
+        <div>
+            <h4>Component subscribed to store</h4>
             <ul>
                 {myEntries.map(entry => {
                     return (<li key={entry.name}>{entry.name}</li>)
@@ -12,7 +13,7 @@ function MyComponent({ myEntries }) {
                 })}
 
             </ul>
-            <hr />
+
         </div>
     )
 }
