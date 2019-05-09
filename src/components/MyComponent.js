@@ -8,7 +8,7 @@ function MyComponent({ myEntries }) {
             <h4>Component subscribed to store</h4>
             <ul>
                 {myEntries.map(entry => {
-                    return (<li key={entry.name}>{entry.name}</li>)
+                    return (<li style={{ listStyle: "none" }} key={entry.name}><p><b>{entry.name}</b> created at : {entry.dateStamp.toString()}</p></li>)
 
                 })}
 
